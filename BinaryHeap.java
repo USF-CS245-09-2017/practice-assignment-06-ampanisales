@@ -1,4 +1,3 @@
-package cs245PA06;
 /**
  * @author Anthony Panisales
  */
