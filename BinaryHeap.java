@@ -54,9 +54,12 @@ public class BinaryHeap {
 		}
 		int removed = arr[0];
 		arr[0] = arr[--size];
+		if (size == 0) {
+			return removed;
+		}
 		int index = 0;
 		int child = leftChild(index);
-		if (arr[child] > arr[rightChild(index)] && child < size) {
+		if (arr[child] > arr[rightChild(index)] && rightChild(index) < size) {
 			child = rightChild(index);
 		}
 		while (arr[child] < arr[index] && child < size) {
