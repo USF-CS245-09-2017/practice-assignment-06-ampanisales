@@ -4,8 +4,8 @@
 
 public class BinaryHeap {
 	
-	int[] arr;
-	int size;
+	private int[] arr;
+	private int size;
 	
 	public BinaryHeap() {
 		arr = new int[10];
